@@ -1,0 +1,20 @@
+1. START
+2. Display "Menu" to user
+3. Prompt user to select a drink
+4. Prompt user to enter the quantity of drink they want to order
+5. Prompt user to select a payment method
+6. IF payment method is "credit card" THEN
+	Prompt user to enter credit card number
+	Prompt user to enter credit card expiration date and security code
+7. ELSE IF payment method is "e-wallet" THEN
+        Prompt user to enter e-wallet number
+8. ELSE IF payment method is "bank transfer" THEN
+        Prompt user to enter bank account number and bank name
+   END IF
+9. Prompt user to confirm their order
+10. IF user confirms their order THEN
+	Process payment according to the selected payment method
+	Send order to the address specified by the user
+      Display success message
+    END IF
+11. END
