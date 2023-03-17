@@ -1,0 +1,66 @@
+Title: Order Makanan Via Online
+
+Declaration:
+Int = pilih_makanan, jumlah_makanan, jenis_bayar,  nomor_kartu_kredit, nomor_e-wallet, nomor_rekening_bank, pilih_pembayaran
+Float = total_harga
+String = alamat
+
+Descripton:
+START
+
+WRITE: 
+        "Menu:
+        1. Nasi Goreng == Rp. 10.000
+        2. Nasi Kuning == Rp. 10.000
+        3. Nasi Padang == Rp. 15.000"
+
+READ pilih_makanan
+READ jumlah_makanan
+READ alamat
+
+INPUT pilih_makanan
+INPUT jumlah_makanan
+INPUT alamat
+
+READ total_harga
+READ jumlah_makanan
+
+IF(pilih_makanan == 1){
+       total_harga = 10000 * jumlah_makanan
+}ELSE IF(pilih_makanan == 2){
+        total_harga = 10000 * jumlah_makanan
+}ELSE IF(pilih_makanan == 3){
+        total_harga = 15000 * jumlah_makanan
+}END IF
+
+
+WRITE:
+        "Total Pembayaran = " total_harga
+        "Menu:
+        1. Kartu Kredit
+        2. E-Wallet
+        3. Bank Transfer"
+
+READ pilih_pembayaran
+READ nomor_kartu_kredit
+READ nomor_e-wallet
+READ nomor_rekening_bank
+
+WRITE pilih_pembayaran
+WRITE nomor_kartu_kredit
+WRITE nomor_e-wallet
+WRITE nomor_rekening_bank
+
+INPUT pilih_pembayaran
+
+IF(pilih_pembayaran == 1){
+       INPUT nomor_kartu_kredit
+}ELSE IF(pilih_pembayaran == 2){
+        INPUT nomor_e-wallet
+}ELSE IF(pilih_pembayaran == 3){
+        INPUT nomor_rekening_bank
+}END IF
+
+WRITE "Pesana Sukses"
+
+END
